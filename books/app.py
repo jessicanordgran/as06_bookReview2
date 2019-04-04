@@ -80,8 +80,8 @@ def f3():
 
 @app.route('/scienceFiction')
 def scienceFiction():
-        scienceFiction = execute_sql('SELECT scienceFiction.com_scifiID, scienceFiction.com_scifiLN, scienceFiction.com_scifiFN, scienceFiction.com_scifiTitle, scienceFiction.com_scifiDes FROM scienceFiction')
-    return render_template('scienceFiction.html', sciencFiction=scienceFiction)  # render a template
+    scienceFiction = execute_sql('SELECT scienceFiction.com_scifiID, scienceFiction.com_scifiLN, scienceFiction.com_scifiFN, scienceFiction.com_scifiTitle, scienceFiction.com_scifiDes FROM scienceFiction')
+    return render_template('scienceFiction.html', scienceFiction=scienceFiction)  # render a template
 
 @app.route('/sF1')
 def sF1():
