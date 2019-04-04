@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\Owner\Desktop\Classes\WEB3200\as06_bookReview1\venv"
+VIRTUAL_ENV="C:\Users\Owner\Desktop\Classes\WEB3200\as06_bookReview2\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
