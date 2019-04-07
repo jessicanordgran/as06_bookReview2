@@ -1,35 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-<img src="./static/logo.png" alt="logo">
-    <div class="container"><br>
-      <div class="row">
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-            <img src="./static/bad.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Badass</h5>
-                <a href="/h1" class="btn btn-primary">Go</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-            <img src="./static/norse.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Norse Mythology</h5>
-                <a href="/h2" class="btn btn-primary">Go</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-            <img src="./static/bul.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Bulfinch's Mythology</h5>
-                <a href="h3" class="btn btn-primary">Go</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+<br>
+{{ show_historys(historys) }}
+<p> CLICK <a href="/">right here</a> to go home</p>
 {% endblock %}

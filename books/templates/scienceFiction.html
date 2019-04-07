@@ -1,35 +1,8 @@
+
 {% extends "layout.html" %}
+
 {% block content %}
-<img src="./static/logo.png" alt="logo">
-    <div class="container"><br>
-      <div class="row">
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-            <img src="./static/lovecraft.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">The Call of Cthulhu</h5>
-                <a href="/sF1" class="btn btn-primary">Go</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-            <img src="./static/tarzan.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Tarzan of the Apes</h5>
-                <a href="/sF2" class="btn btn-primary">Go</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="card" style="width: 18rem;">
-            <img src="./static/robot.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">I Robot</h5>
-                <a href="sF3" class="btn btn-primary">Go</a>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+<br>
+{{ show_sciences(sciences) }}
+<p> CLICK <a href="/">right here</a> to go home</p>
 {% endblock %}

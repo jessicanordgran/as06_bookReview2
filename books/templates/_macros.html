@@ -1,9 +1,9 @@
-{% macro show_fiction(fiction) %}
+{% macro show_fiction(fictions) %}
 <div class="card adjust-height">
  <div class="card-content">
    <div class="content">
      <h1>
-       ${{ fiction['ficTitle'] }}<br>
+       ${{ fictions['ficTitle'] }}<br>
        ${{ fiction['ficLN'] }}<br>
        ${{ fiction['ficDes'] }}
      </h1>
@@ -13,9 +13,9 @@
 {% endmacro %}
 
 
-{% macro show_fiction(fiction) %}
+{% macro show_fictions(fictions) %}
 <div>
-  {% for fiction in fiction %}
+  {% for fiction in fictions %}
     <div>
       {{ show_fiction(fiction)}}
     <div>

@@ -1,9 +1,14 @@
+{% from '_macros.html' import show_fiction, show_fictions with context %}
+{% from '_macros.html' import show_science, show_sciences with context %}
+{% from '_macros.html' import show_history, show_historys with context %}
 <!doctype html>
 <html>
+<header>
+  <img src="/static/logo.png" alt="logo">
+</header>
   <head>
-    <title>Book Reads</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Book Review Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
   </head>
   <body>
     <div class="container top">
