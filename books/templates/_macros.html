@@ -1,24 +1,67 @@
-{% macro show_fiction(fictions) %}
+{% macro show_history(historys) %}
 <div class="card adjust-height">
- <div class="card-content">
-   <div class="content">
-     <h1>
-       ${{ fictions['ficTitle'] }}<br>
-       ${{ fiction['ficLN'] }}<br>
-       ${{ fiction['ficDes'] }}
-     </h1>
-   </div>
- </div>
+  <div class="card-content">
+    <div class="content">
+      <h2>{{ historys['hisTitle'] }}</h2>
+      <h4>{{ historys['hisA'] }}</h4>
+      <p>{{ historys['hisDes'] }}</p><br>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro show_historys(historys) %}
+<div>
+  {% for history in historys %}
+  <div>
+    {{ show_history(history) }}
+  </div>
+  {% endfor %}
 </div>
 {% endmacro %}
 
 
+{% macro show_science(sciences) %}
+<div class="card adjust-height">
+  <div class="card-content">
+    <div class="content">
+      <h2>{{ sciences['sifiTitle'] }}</h2>
+      <h4>{{ sciences['sifiA'] }}</h4>
+      <p>{{ sciences['sifiDest'] }}</p><br>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
+{% macro show_sciences(sciences) %}
+<div>
+  {% for science in sciences %}
+  <div>
+    {{ show_science(science) }}
+  </div>
+  {% endfor %}
+</div>
+{% endmacro %}
+
+
+{% macro show_ficton(fictions) %}
+<div class="card adjust-height">
+  <div class="card-content">
+    <div class="content">
+      <h2>{{ fictions['ficTitle'] }}</h2>
+      <h4>{{ fictions['ficA'] }}</h4>
+      <p>{{ fictions['ficDes'] }}</p><br>
+    </div>
+  </div>
+</div>
+{% endmacro %}
+
 {% macro show_fictions(fictions) %}
 <div>
   {% for fiction in fictions %}
-    <div>
-      {{ show_fiction(fiction)}}
-    <div>
-    {% endfor %}
+  <div>
+    {{ show_fiction(fiction) }}
+  </div>
+  {% endfor %}
 </div>
 {% endmacro %}
