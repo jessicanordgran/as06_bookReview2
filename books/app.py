@@ -2,7 +2,7 @@ import sqlite3
 # import the Flask class from the flask module
 from flask import Flask, render_template, g, request, redirect, url_for
 
-PATH = 'db/data.sqlite'
+PATH = 'db/bk.sqlite'
 
 app = Flask(__name__)
 
